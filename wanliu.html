@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>万柳书院 · 西边户三维户型</title>
+    <script type="module" crossorigin src="./assets/three.module-Boxh9JUz.js"></script>
+    <script type="module" crossorigin src="./assets/OrbitControls-3A4OAO9m.js"></script>
+    <script type="module" crossorigin src="./assets/RoomEnvironment-DKbN5ia3.js"></script>
+    <script type="module" crossorigin src="./assets/RoundedBoxGeometry-C9-uB9Ny.js"></script>
+    <script type="module" crossorigin src="./assets/main-pLcsS53l.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-DEuIjRBP.css">
+  </head>
+  <body class="fp" data-mode="overview" data-plan="wanliu">
+    <canvas id="fp-canvas"></canvas>
+
+    <header class="fp-top">
+      <a class="fp-brand" href="./">← THREE.JS LAB</a>
+      <div class="fp-title">
+        <small>WANLIU ACADEMY · 海淀万柳华府北街 9 号院</small>
+        <h1>万柳书院 <em>3 室 2 厅 3 卫</em></h1>
+      </div>
+      <nav class="fp-modes">
+        <button data-mode="overview" type="button">俯瞰剖切</button>
+        <button data-mode="walk" type="button">第一人称漫游</button>
+      </nav>
+    </header>
+
+    <aside class="fp-panel fp-left">
+      <section>
+        <div class="fp-kicker">FLOOR AREA</div>
+        <div class="fp-area"><b id="fp-area">--</b><span>m² 室内<br /><small>另有阳台 <b id="fp-balcony">--</b> m² · 建面 267.02 m²</small></span></div>
+        <p class="fp-note">南向面宽 12.7 米，客厅面宽 5.3 米</p>
+      </section>
+      <section>
+        <div class="fp-kicker">ROOMS</div>
+        <div class="fp-rooms" id="fp-rooms"></div>
+      </section>
+    </aside>
+
+    <aside class="fp-panel fp-right">
+      <section>
+        <div class="fp-kicker">ARCHITECTURAL STYLE</div>
+        <div class="fp-styles" id="fp-styles"></div>
+      </section>
+      <section>
+        <div class="fp-kicker">TIME OF DAY</div>
+        <div class="fp-seg">
+          <button data-time="1" class="active" type="button">☼ 白天</button>
+          <button data-time="0.45" type="button">◐ 黄昏</button>
+          <button data-time="0" type="button">☾ 夜晚</button>
+        </div>
+      </section>
+      <section class="fp-detail" id="fp-detail" hidden></section>
+    </aside>
+
+    <div class="fp-minimap" id="fp-minimap"><canvas></canvas><span>户型示意 · 点击跳转房间</span></div>
+
+    <div class="fp-tip" id="fp-tip" hidden></div>
+    <div class="fp-cross"><i></i></div>
+    <div class="fp-hud">
+      <b id="fp-where">入户过厅</b>
+      <span id="fp-aim"></span>
+    </div>
+    <div class="fp-help">
+      <span class="ov"><kbd>拖拽</kbd> 旋转 <kbd>滚轮</kbd> 缩放 <kbd>右键</kbd> 平移 · 点击家具或房间看细节 · <kbd>V</kbd> 进入漫游</span>
+      <span class="wk"><kbd>W A S D</kbd> 移动 <kbd>Shift</kbd> 快走 <kbd>鼠标</kbd> 转头 <kbd>E</kbd> 查看准星处物件 <kbd>V</kbd> 回到俯瞰 <kbd>Esc</kbd> 释放鼠标</span>
+    </div>
+    <button class="fp-resume" id="fp-resume" type="button" hidden>↩ 回到漫游位置</button>
+
+    <div class="fp-paused" id="fp-paused" hidden>
+      <div>
+        <h2>漫游已暂停</h2>
+        <p>点击任意位置继续</p>
+        <button id="fp-paused-exit" type="button">返回俯瞰</button>
+      </div>
+    </div>
+
+  </body>
+</html>

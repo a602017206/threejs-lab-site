@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>家庭网络中枢</title>  <script type="module" crossorigin src="./assets/homeNetwork-DsRxxZNt.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-Boxh9JUz.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-DKbN5ia3.js">
+  <link rel="modulepreload" crossorigin href="./assets/RectAreaLightUniformsLib-zJ9fn2t_.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoundedBoxGeometry-C9-uB9Ny.js">
+  <link rel="modulepreload" crossorigin href="./assets/fit-BSHkNBCw.js">
+  <link rel="stylesheet" crossorigin href="./assets/homeNetwork-D645oqsO.css">
+</head>
+<body data-theme="dark"><main class="home-shell" data-page="overview">
+  <header class="home-header"><a href="./">⌂ 智能家庭网络中枢</a><nav>
+    <button type="button" class="active" data-page="overview">全屋概览</button>
+    <button type="button" data-page="topology">网络拓扑</button>
+    <button type="button" data-page="health">设备健康</button>
+  </nav><div class="header-actions"><i></i><span>全屋在线</span><button id="theme-toggle" type="button" aria-label="切换亮色主题">☼ 晨光模式</button><time></time></div></header>
+  <aside class="home-left"><section class="home-panel welcome"><div class="home-kicker" id="home-kicker">GOOD EVENING · HOME 01</div><h1 id="home-title">家的连接，<br/>一目了然。</h1><p id="home-copy">全屋设备安静协同，网络运行稳定。</p><div class="home-score"><div><span>网络健康度</span><strong>96<small>/100</small></strong></div><i><b>良好</b><small>延迟 12ms</small></i></div></section><section class="home-panel device-summary"><div class="home-section-title"><h2>设备状态</h2><span>LIVE</span></div><div class="device-counts"><div><b id="device-total">--</b><span>已配对</span></div><div><b id="device-online">--</b><span>运行正常</span></div><div><b id="device-warning">--</b><span>需关注</span></div><div><b id="device-offline">--</b><span>离线</span></div></div></section><section class="home-panel network-card"><div class="home-section-title"><h2>家庭网络</h2><span>Wi-Fi 7</span></div><div class="network-stat"><i>↓</i><div><b>842 Mb/s</b><span>实时下行</span></div><em>↗ 128 Mb/s</em></div><div class="network-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></section></aside>
+  <section class="home-stage"><canvas id="home-canvas"></canvas><canvas id="home-alt" class="stage-alt"></canvas><div class="room-label living">客厅</div><div class="room-label master">主卧</div><div class="room-label study">书房</div><div class="room-label entry">玄关</div><div class="stage-heading"><span id="home-stage-kicker">HOME DIGITAL TWIN</span><strong id="home-stage-heading">家庭设备拓扑</strong></div><div class="home-legend"><i class="online"></i> 正常 <i class="warning"></i> 需关注 <i class="offline"></i> 离线 <b id="home-stage-hint">点击设备查看状态 · 拖拽切换视角</b></div>
+    <aside class="home-board page-topology" id="topo-board">
+      <div class="home-section-title"><h2>链路图</h2><span>MESH</span></div>
+      <ul id="topo-board-list"></ul>
+    </aside>
+    <aside class="home-board page-health" id="health-board">
+      <div class="home-section-title"><h2>健康巡检</h2><span>SCAN</span></div>
+      <ul id="health-board-list"></ul>
+    </aside>
+  </section>
+  <aside class="home-right"><section class="home-panel selected-device"><div class="home-kicker">SELECTED DEVICE</div><div class="selected-status"><i id="selected-dot"></i><span id="selected-status">--</span></div><div class="device-icon" id="selected-icon">--</div><h2 id="selected-name">--</h2><p id="selected-room">--</p><div class="selected-metrics"><div><span>连接信号</span><b id="selected-signal">--</b></div><div><span>实时能耗</span><b id="selected-power">--</b></div></div><div class="use-state"><span>当前状态</span><b id="selected-usage">--</b></div></section><section class="home-panel scenes"><div class="home-section-title"><h2>家庭场景</h2><span>3 RUNNING</span></div><button><i>☾</i><span>夜间守护</span><b>已开启</b></button><button><i>⌂</i><span>离家模式</span><b>待命</b></button><button><i>♨</i><span>舒适温控</span><b>25°C</b></button></section><section class="home-panel alerts"><div class="home-section-title"><h2>需要留意</h2><span>02</span></div><p class="warning">● 书房电脑正在安装系统更新</p><p class="offline">● 无线打印机已离线 2 小时</p></section></aside>
+</main></body></html>

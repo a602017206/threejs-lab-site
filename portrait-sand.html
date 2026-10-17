@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050a12" />
+  <meta name="description" content="摄像头或照片中的人像化为星沙，拍手爆散再重聚。" />
+  <title>人像流沙 · 感官粒子实验室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050a12'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%2370e4ff' stroke-width='2'/%3E%3Ccircle cx='24' cy='9' r='3' fill='%23ffbd75'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/three.module-Boxh9JUz.js"></script>
+  <script type="module" crossorigin src="./assets/OutputPass-BYQOcqaT.js"></script>
+  <script type="module" crossorigin src="./assets/vision_bundle-DroGrB3s.js"></script>
+  <script type="module" crossorigin src="./assets/gesture-DS3mHc0X.js"></script>
+  <script type="module" crossorigin src="./assets/main-D4T2kjus.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-6TxFClR8.css">
+</head>
+<body>
+  <header class="sl-header">
+    <a class="sl-brand" href="./" aria-label="返回首页"><b>PRISM</b><span>感官粒子实验室</span></a>
+    <nav id="sl-nav" class="sl-nav" aria-label="粒子模块"></nav>
+    <a class="sl-original" href="particle1.html">手势粒子 ↗</a>
+  </header>
+  <main id="sl-stage" aria-label="交互粒子画布"></main>
+  <div class="sl-heading"><span id="sl-kicker">SENSORY LAB</span><h1 id="sl-title">人像流沙</h1><p id="sl-phrase"></p></div>
+  <aside class="sl-panel" id="sl-panel" aria-label="交互控制">
+    <button class="sl-panel-toggle" id="sl-panel-toggle" aria-expanded="true" aria-controls="sl-panel-body"><span>输入与画面</span><span id="sl-toggle-icon">−</span></button>
+    <div id="sl-panel-body" class="sl-panel-body">
+      <section>
+        <h2><span id="sl-input-label">输入方式</span><span class="sl-label" id="sl-vision-state">演示中</span></h2>
+        <div class="sl-segment" id="sl-visual-source">
+          <button data-visual="demo" class="active" aria-pressed="true">演示</button>
+          <button data-visual="manual" aria-pressed="false">手动</button>
+          <button data-visual="camera" aria-pressed="false">摄像头</button>
+        </div>
+        <p class="sl-note" id="sl-input-hint"></p>
+        <div class="sl-preview" id="sl-preview" hidden><video id="sl-video" playsinline muted></video><span id="sl-detected">等待画面</span></div>
+        <label class="sl-upload" data-modules="portrait">上传人像照片<input id="sl-photo" type="file" accept="image/*" hidden /></label>
+        <p class="sl-note" id="sl-photo-note" data-modules="portrait">照片在本机提取人像；建议主体清楚、光线充足。</p>
+      </section>
+      <section>
+        <h2>声音输入 <span class="sl-label" id="sl-sound-state">节奏演示</span></h2>
+        <div class="sl-segment" id="sl-sound-source">
+          <button data-sound="off" aria-pressed="false">关闭</button>
+          <button data-sound="demo" class="active" aria-pressed="true">演示</button>
+          <button data-sound="mic" aria-pressed="false">话筒</button>
+          <button data-sound="system" aria-pressed="false">电脑声音</button>
+        </div>
+        <div class="sl-meter" aria-hidden="true"><i id="sl-level"></i></div>
+        <p class="sl-note" id="sl-sound-note" role="status">低音让空间膨胀，高音扬起细小波纹。</p>
+        <label class="sl-check" data-modules="portrait"><input id="sl-clap" type="checkbox" checked /> 声音起音触发爆散</label>
+      </section>
+      <section>
+        <h2>画面调节</h2>
+        <div class="sl-variants" id="sl-variants" aria-label="粒子造型"></div>
+        <p class="sl-note" id="sl-variant-note"></p>
+        <label class="sl-slider">力度<input id="sl-intensity" type="range" min="0.3" max="2" step="0.1" value="1" /><output id="sl-intensity-value">1.0</output></label>
+        <label class="sl-slider" data-modules="paint portrait aurora">留影<input id="sl-trail" type="range" min="0.3" max="2" step="0.1" value="1" /><output id="sl-trail-value">1.0</output></label>
+        <div class="sl-palette" id="sl-palette" aria-label="配色"><button data-palette="cyan" aria-label="冰蓝碧绿" title="冰蓝碧绿"></button><button data-palette="rose" aria-label="玫瑰紫" title="玫瑰紫"></button><button data-palette="solar" aria-label="金砂琥珀" title="金砂琥珀"></button></div>
+        <div class="sl-actions"><button id="sl-burst" data-modules="rings portrait">释放冲击波</button><button id="sl-reset">重新开始</button></div>
+      </section>
+      <p class="sl-local">摄像头和话筒只在本机处理，切换输入或离开页面即释放。</p>
+    </div>
+  </aside>
+  <footer class="sl-footer"><div class="sl-source"><i></i><span id="sl-source">演示 · 无需设备</span></div><span id="sl-hint"></span><div class="sl-tools"><button id="sl-capture">保存画面</button><button id="sl-fullscreen" title="全屏" aria-label="进入或退出全屏">⤢</button></div></footer>
+  <div id="sl-message" class="sl-message" role="status" aria-live="polite"></div>
+</body>
+</html>

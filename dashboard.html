@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全球跨境运营指挥中心</title>
+    <script type="module" crossorigin src="./assets/dashboard-DXZ62Zmy.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three.module-Boxh9JUz.js">
+    <link rel="modulepreload" crossorigin href="./assets/fit-BSHkNBCw.js">
+    <link rel="stylesheet" crossorigin href="./assets/dashboard-jq2Irso5.css">
+  </head>
+  <body>
+    <main class="dash" data-page="overview">
+      <header class="topbar">
+        <a class="brand" href="./"><span class="brand-mark">◉</span> 跨境贸易运营分析大屏</a>
+        <nav aria-label="数据视图">
+          <button type="button" class="active" data-page="overview">全球总览</button>
+          <button type="button" data-page="routes">链路监测</button>
+          <button type="button" data-page="markets">市场增长</button>
+        </nav>
+        <div class="system-status"><span class="live-dot"></span><span>数据流在线</span><time>系统时间 · --:--:--</time></div>
+      </header>
+
+      <aside class="left-stack">
+        <section class="panel overview" id="overview">
+          <div class="panel-kicker">GLOBAL COMMERCE INDEX</div>
+          <div class="overview-heading"><h3>全球交易总览</h3><span class="period">近 30 日</span></div>
+          <div class="big-number">2,670<em> 万</em></div>
+          <b class="positive">↑ 8.6% <small>较上周期</small></b>
+          <div class="spark" aria-label="订单增长趋势"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="stat-row"><div><small>全球订单</small><strong>98,742</strong></div><div><small>活跃 SKU</small><strong>18,430</strong></div></div>
+        </section>
+
+        <section class="panel route-panel" id="routes">
+          <div class="panel-heading"><h3>实时链路状态</h3><span class="pulse-label">LIVE 24</span></div>
+          <div class="route"><div><span>华东 → 欧洲中部</span><b>96.8%</b></div><i><em style="width:96.8%"></em></i><small>空运 · 正常 · 1,284 票在途</small></div>
+          <div class="route"><div><span>华南 → 北美西海岸</span><b class="amber">82.4%</b></div><i><em class="amber-bar" style="width:82.4%"></em></i><small>海运 · 轻度延迟 · 2,041 票在途</small></div>
+          <div class="route"><div><span>中东 → 南美东岸</span><b>91.2%</b></div><i><em style="width:91.2%"></em></i><small>快线 · 正常 · 736 票在途</small></div>
+        </section>
+
+        <section class="panel market-panel" id="markets">
+          <div class="panel-heading"><h3>Top 国家 / 市场</h3><span>GMV</span></div>
+          <ol id="rank"></ol>
+        </section>
+      </aside>
+
+      <section class="globe" aria-label="可交互全球市场地球">
+        <canvas id="globe"></canvas><canvas id="trade-alt" class="stage-alt"></canvas>
+        <div class="coordinate readout-left">LAT 35° 41′ N<br />LON 139° 41′ E</div>
+        <div class="coordinate readout-right">ORBIT / GEO-01<br /><span>SYNC 99.98%</span></div>
+        <div class="globe-title"><span class="title-line"></span><div><small id="globe-kicker">GLOBAL MARKET TOPOLOGY</small><strong id="globe-heading">全球订单流向态势</strong></div></div>
+        <aside class="view-board page-routes" id="routes-board">
+          <div class="panel-heading"><h3>跨境主干链路</h3><span>7 LIVE</span></div>
+          <ul id="route-board-list"></ul>
+        </aside>
+        <aside class="view-board page-markets" id="markets-board">
+          <div class="panel-heading"><h3>市场增速雷达</h3><span>GMV Δ</span></div>
+          <ul id="market-board-list"></ul>
+        </aside>
+        <div class="signal-rail">
+          <div class="rail-head"><span>全球成交节奏</span><small>ORDER PULSE · UTC+8</small><b>▲ 12.4%</b></div>
+          <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="rail-scale"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
+        </div>
+        <div class="legend"><span class="hint-dot"></span> 拖拽旋转地球 · 点击国家轮廓查看详情</div>
+      </section>
+
+      <aside class="right-stack">
+        <section class="panel country">
+          <div class="panel-kicker">SELECTED MARKET / LIVE</div>
+          <h2 id="name"></h2><p id="city"></p>
+          <strong id="gmv"></strong><b id="growth"></b>
+          <div id="metrics"></div>
+        </section>
+
+        <section class="panel health-panel">
+          <div class="panel-heading"><h3>区域健康度</h3><span>6 REGIONS</span></div>
+          <div class="health-grid">
+            <div class="gauge good" style="--value:81"><i>81</i><small>亚太</small></div><div class="gauge good" style="--value:74"><i>74</i><small>欧洲</small></div><div class="gauge good" style="--value:78"><i>78</i><small>北美</small></div>
+            <div class="gauge alert-gauge" style="--value:68"><i>68</i><small>中东</small></div><div class="gauge alert-gauge" style="--value:58"><i>58</i><small>南美</small></div><div class="gauge risk-gauge" style="--value:52"><i>52</i><small>非洲</small></div>
+          </div>
+        </section>
+
+        <section class="panel logistics-panel">
+          <div class="panel-heading"><h3>物流绩效</h3><span>NETWORK AVG.</span></div>
+          <div class="kpis"><b>18.6<small>平均运输时效 / h</small></b><b>92.1%<small>履约及时率</small></b><b>7.9%<small>退货率</small></b></div>
+        </section>
+
+        <section class="panel event-panel">
+          <div class="panel-heading"><h3>风险与中断预警</h3><span class="warning-count">02 OPEN</span></div>
+          <div class="event warning"><span></span><div><b>港口拥堵</b><p>北美西海岸 ETA 延迟 1–3 天</p></div><time>09:42</time></div>
+          <div class="event danger"><span></span><div><b>天气影响</b><p>南美内陆派送波动</p></div><time>08:18</time></div>
+          <div class="event normal"><span></span><div><b>运力补充</b><p>中欧空运新增 6 个舱位</p></div><time>07:55</time></div>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>
