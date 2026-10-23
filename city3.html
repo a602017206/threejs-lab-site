@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CITY3 · 陆家嘴三维城市</title>
+  <script type="module" crossorigin src="./assets/city3-DqVEcM9R.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-D90_RIQy.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-CdVUlVUp.js">
+  <link rel="modulepreload" crossorigin href="./assets/CSS2DRenderer-Chlnt4G0.js">
+  <link rel="modulepreload" crossorigin href="./assets/OutputPass-DRaLd4T9.js">
+  <link rel="stylesheet" crossorigin href="./assets/city3-BVFTwU1j.css">
+</head>
+<body>
+  <div id="c3-gl"></div>
+  <div id="c3-labels"></div>
+
+  <header class="c3-top">
+    <a class="c3-brand" href="./" title="返回首页">
+      <span class="c3-code">CITY3</span>
+      <span class="c3-title">陆家嘴 · 外滩<small>Shanghai Lujiazui 3D City · OSM</small></span>
+    </a>
+    <div class="c3-clock"><b id="c3-time">--:--</b><span id="c3-sun">--</span></div>
+  </header>
+
+  <aside class="c3-side">
+    <section>
+      <h3>地标</h3>
+      <ul class="c3-list" id="c3-landmarks"></ul>
+    </section>
+    <section>
+      <h3>机位</h3>
+      <div class="c3-chips" id="c3-views"></div>
+    </section>
+    <section>
+      <h3>图层</h3>
+      <div class="c3-toggles" id="c3-layers"></div>
+    </section>
+    <section class="c3-stats" id="c3-stats"></section>
+  </aside>
+
+  <article class="c3-info" id="c3-info" hidden>
+    <button class="c3-close" id="c3-info-close" aria-label="关闭">×</button>
+    <div id="c3-info-body"></div>
+  </article>
+
+  <footer class="c3-dock">
+    <button class="c3-play" id="c3-play" title="播放昼夜（空格）">▶</button>
+    <div class="c3-slider">
+      <input type="range" id="c3-hour" min="0" max="24" step="0.01" />
+      <div class="c3-ticks"><span>0</span><span>6</span><span>12</span><span>18</span><span>24</span></div>
+    </div>
+    <div class="c3-presets" id="c3-presets"></div>
+    <div class="c3-weather" id="c3-weather"></div>
+  </footer>
+
+  <div class="c3-tip" id="c3-tip" hidden></div>
+  <div class="c3-hint">左键旋转 · 右键平移 · 滚轮缩放 · 点击建筑查看详情</div>
+
+  <div id="c3-loader">
+    <div class="c3-skyline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="c3-loader-code">CITY3</div>
+    <div class="c3-loader-text" id="c3-loader-text">正在载入 OpenStreetMap 建筑数据…</div>
+    <div class="c3-loader-track"><div id="c3-loader-bar"></div></div>
+  </div>
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

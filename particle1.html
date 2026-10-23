@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PARTICLE1 · 手势粒子</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2304040a'/%3E%3Ccircle cx='13' cy='18' r='7' fill='%23ff4d8d'/%3E%3Ccircle cx='23' cy='9' r='4' fill='%237a5cff'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/particle1-Dw5BLWG0.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-D90_RIQy.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-CdVUlVUp.js">
+  <link rel="modulepreload" crossorigin href="./assets/OutputPass-DRaLd4T9.js">
+  <link rel="modulepreload" crossorigin href="./assets/gesture-DS3mHc0X.js">
+  <link rel="stylesheet" crossorigin href="./assets/particle1-C2me0_fL.css">
+</head>
+<body>
+  <div id="p1-gl"></div>
+
+  <a class="p1-brand" href="./" title="返回首页"><b>PARTICLE1</b><span>手势粒子</span></a>
+
+  <a class="p1-lab-link" href="audio-rings.html">探索声音、光绘、人像与极光 ↗</a>
+
+  <aside class="p1-panel" id="p1-panel">
+    <button class="p1-collapse" id="p1-collapse" aria-expanded="true" aria-label="收起或展开面板" title="收起 / 展开面板">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+    </button>
+    <div class="p1-body">
+      <h4 class="p1-panel-title">粒子实验室</h4>
+      <div class="p1-seg p1-tabs" role="tablist" aria-label="控制面板">
+        <button id="p1-tab-interaction" role="tab" aria-selected="true" aria-controls="p1-interaction" class="active">交互</button>
+        <button id="p1-tab-appearance" role="tab" aria-selected="false" aria-controls="p1-appearance" tabindex="-1">造型</button>
+      </div>
+      <div id="p1-interaction" role="tabpanel" aria-labelledby="p1-tab-interaction">
+        <section>
+          <h4>手掌姿态</h4>
+          <div class="p1-pose-display">
+            <div class="p1-dial" aria-hidden="true"><i id="p1-needle"></i></div>
+            <div><output id="p1-angle">0°</output><span id="p1-pose-status">手动体验 · 拖动倾斜滑条</span></div>
+          </div>
+          <label class="p1-check"><input type="checkbox" id="p1-follow" checked /> 手掌转向旋转图形</label>
+          <label class="p1-check"><input type="checkbox" id="p1-pinch" checked /> 拇指与食指捏合形成涡流</label>
+          <label class="p1-slider">灵敏度 <input type="range" id="p1-sensitivity" min="0.4" max="2" step="0.1" value="1" /></label>
+          <div class="p1-row"><button id="p1-calibrate">重新校准</button><button id="p1-reset-view">重置视角</button></div>
+          <p class="p1-note">首次识别自动校准。倾斜手掌控制转向，前后翻掌控制立体倾角；张合或双手间距控制扩散。</p>
+        </section>
+        <section>
+          <h4>声音律动 <span class="p1-live" id="p1-audio-status">已关闭</span></h4>
+          <div class="p1-seg" id="p1-audio-mode" aria-label="声音来源">
+            <button data-audio="off" class="active" aria-pressed="true">关闭</button>
+            <button data-audio="demo" aria-pressed="false">演示</button>
+            <button data-audio="mic" aria-pressed="false">麦克风</button>
+          </div>
+          <div class="p1-audio-meter" aria-hidden="true"><i id="p1-audio-level"></i></div>
+          <label class="p1-slider">强度 <input type="range" id="p1-audio-gain" min="0.3" max="2.5" step="0.1" value="1" /></label>
+          <p class="p1-note" id="p1-audio-note" role="status">低音驱动膨胀，高音激起波纹。声音仅在本机分析，可与手势叠加。</p>
+        </section>
+        <section>
+          <h4>手动体验</h4>
+          <label class="p1-slider">倾斜 <input type="range" id="p1-tilt" min="-180" max="180" step="1" value="0" /></label>
+          <label class="p1-slider">涡流 <input type="range" id="p1-vortex" min="0" max="1" step="0.01" value="0" /></label>
+          <p class="p1-note">未开启摄像头或暂时丢手时可用。拖拽画面调整视角，滚轮控制张合。</p>
+        </section>
+      </div>
+      <div id="p1-appearance" role="tabpanel" aria-labelledby="p1-tab-appearance" hidden>
+      <section>
+        <h4>形状</h4>
+        <div class="p1-chips" id="p1-shapes"></div>
+        <div class="p1-row">
+          <input id="p1-text" aria-label="粒子文字" maxlength="12" placeholder="输入文字" value="你好" />
+          <button id="p1-text-go">生成</button>
+        </div>
+        <label class="p1-upload">
+          <input type="file" id="p1-file" accept="image/*" hidden />
+          <span>上传图片，识别主体轮廓</span>
+        </label>
+      </section>
+
+      <section>
+        <h4>颜色</h4>
+        <div class="p1-seg" id="p1-color-mode">
+          <button data-mode="solid">单色</button>
+          <button data-mode="gradient" class="active">渐变</button>
+          <button data-mode="image" disabled>原图</button>
+        </div>
+        <div class="p1-row p1-colors">
+          <input type="color" id="p1-color-a" aria-label="起始颜色" value="#ff4d8d" />
+          <span class="p1-arrow" id="p1-arrow">→</span>
+          <input type="color" id="p1-color-b" aria-label="结束颜色" value="#7a5cff" />
+          <select id="p1-axis" aria-label="渐变方向"><option value="auto">自动</option><option value="height">按高度</option><option value="radius">按半径</option></select>
+        </div>
+        <div class="p1-presets" id="p1-presets"></div>
+      </section>
+
+      <section>
+        <h4>粒子</h4>
+        <div class="p1-seg" id="p1-count">
+          <button data-n="20000">2 万</button>
+          <button data-n="40000" class="active">4 万</button>
+          <button data-n="80000">8 万</button>
+        </div>
+        <label class="p1-slider">大小 <input type="range" id="p1-size" min="0.6" max="3" step="0.1" value="2.2" /></label>
+        <label class="p1-check"><input type="checkbox" id="p1-spin" checked /> 自动旋转</label>
+      </section>
+      </div>
+    </div>
+  </aside>
+
+  <div class="p1-cam" id="p1-cam">
+    <div class="p1-video">
+      <video id="p1-video" playsinline muted></video>
+      <canvas id="p1-overlay"></canvas>
+      <button id="p1-cam-btn">开启摄像头手势</button>
+    </div>
+    <button id="p1-cam-stop" class="p1-cam-stop" hidden>关闭摄像头</button>
+    <div class="p1-meter">
+      <span id="p1-status">未开启</span>
+      <div class="p1-bar"><i id="p1-bar"></i></div>
+    </div>
+    <label class="p1-manual" id="p1-manual">张合 <input type="range" id="p1-open" min="0" max="1" step="0.01" value="0.5" /></label>
+  </div>
+
+  <button class="p1-fs" id="p1-fs" title="全屏（F）">
+    <svg viewBox="0 0 24 24" width="18" height="18"><path id="p1-fs-icon" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+  </button>
+
+  <div class="p1-hint" id="p1-hint">转掌 · 旋转　/　张合 · 扩散　/　捏合 · 涡流　/　声音 · 律动</div>
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRANS1 · 变形金刚机库</title>
+  <script type="module" crossorigin src="./assets/transformer1-DrZ6_Hlc.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-D90_RIQy.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoundedBoxGeometry-CMPn_2ng.js">
+  <link rel="modulepreload" crossorigin href="./assets/kit-iRLQ1y0Z.js">
+  <link rel="modulepreload" crossorigin href="./assets/materials-DvrRq3eg.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-CdVUlVUp.js">
+  <link rel="modulepreload" crossorigin href="./assets/Reflector-CMPJtKG2.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-BjjKTafr.js">
+  <link rel="modulepreload" crossorigin href="./assets/OutputPass-DRaLd4T9.js">
+  <link rel="modulepreload" crossorigin href="./assets/stage-B-gMYQEE.js">
+  <link rel="modulepreload" crossorigin href="./assets/audio-DBvuFfhv.js">
+  <link rel="stylesheet" crossorigin href="./assets/style-CiMAzQUw.css">
+</head>
+<body data-faction="autobot">
+  <div id="tf-gl"></div>
+
+  <header class="tf-top">
+    <a class="tf-brand" href="./" title="返回首页">
+      <span class="tf-code">TRANS1</span>
+      <span class="tf-title">变形金刚机库<small>Transformers Hangar · <span id="tf-count">8</span> 位角色 · 实时分件变形</small></span>
+    </a>
+    <div class="tf-keys"><kbd>空格</kbd> 变形 <kbd>R</kbd> 出击演示 <kbd>1–8</kbd> 切换角色</div>
+  </header>
+
+  <aside class="tf-side">
+    <ol class="tf-list" id="tf-list"></ol>
+  </aside>
+
+  <article class="tf-info" id="tf-info"></article>
+
+  <footer class="tf-dock">
+    <button class="tf-go" id="tf-go"><b>⟳</b>变形 · 机器人</button>
+    <button class="tf-roll" id="tf-rollout"><b>➤</b>出击演示</button>
+    <label class="tf-scrub">
+      <span>载具</span>
+      <input type="range" id="tf-scrub" min="0" max="1000" value="0" />
+      <span>机器人</span>
+      <b id="tf-scrub-val">0%</b>
+    </label>
+    <div class="tf-seg" id="tf-speed">
+      <button data-speed="0.25">慢镜</button>
+      <button data-speed="0.5">0.5×</button>
+      <button data-speed="1" class="active">1×</button>
+      <button data-speed="2">2×</button>
+    </div>
+    <div class="tf-seg" id="tf-views"></div>
+    <div class="tf-seg" id="tf-toggles">
+      <button data-toggle="spin">转台</button>
+      <button data-toggle="sound" class="active">音效</button>
+    </div>
+  </footer>
+
+  <div class="tf-credit">Transformers 及角色名、阵营名为孩之宝（Hasbro）商标。本页模型、贴图与音效均为程序化原创生成，仅作非商业技术演示。</div>
+
+  <div id="tf-loader"><div class="tf-loader-text">正在启动机库…</div></div>
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

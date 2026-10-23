@@ -1,0 +1,58 @@
+[
+  {
+    "id": "g1",
+    "file": "g1.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/opo9611a.jpg",
+    "source": "https://esahubble.org/images/opo9611a/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "ngc604",
+    "file": "ngc604.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic1901b.jpg",
+    "source": "https://esahubble.org/images/heic1901b/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "ngc346",
+    "file": "ngc346.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic2502a.jpg",
+    "source": "https://esahubble.org/images/heic2502a/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "ngc602",
+    "file": "ngc602.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic0702a.jpg",
+    "source": "https://esahubble.org/images/heic0702a/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "r136",
+    "file": "r136.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic1605a.jpg",
+    "source": "https://esahubble.org/images/heic1605a/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "sn1987a",
+    "file": "sn1987a.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic1704a.jpg",
+    "source": "https://esahubble.org/images/heic1704a/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "tarantula",
+    "file": "tarantula.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic0416a.jpg",
+    "source": "https://esahubble.org/images/heic0416a/",
+    "usage": "https://esahubble.org/copyright/"
+  },
+  {
+    "id": "ngc595",
+    "file": "ngc595.jpg",
+    "url": "https://cdn.esahubble.org/archives/images/screen/heic1901c.jpg",
+    "source": "https://esahubble.org/images/heic1901c/",
+    "usage": "https://esahubble.org/copyright/"
+  }
+]

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAIL1 · 中国铁路网</title>
+  <script type="module" crossorigin src="./assets/rail1-DHKLpXPr.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-D90_RIQy.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-CdVUlVUp.js">
+  <link rel="modulepreload" crossorigin href="./assets/BufferGeometryUtils-Cj34ebIR.js">
+  <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-BMcLoZzq.js">
+  <link rel="stylesheet" crossorigin href="./assets/rail1-DFsjfjFT.css">
+</head>
+<body>
+  <div id="rail-app">
+    <canvas id="rail-gl"></canvas>
+    <header class="rail-top">
+      <a class="rail-brand" href="./">
+        <span class="code">RAIL1</span>
+        <span class="title">中国铁路网<small>OSM · 12306 · NATURAL EARTH</small></span>
+      </a>
+      <div class="rail-status">
+        <b id="rail-train-code">—</b>
+        <span id="rail-train-meta">选择一趟列车开始跟随</span>
+      </div>
+    </header>
+
+    <aside class="rail-side">
+      <div class="rail-modes" id="rail-modes">
+        <button type="button" data-mode="trains" class="active">列车</button>
+        <button type="button" data-mode="highways">公路</button>
+      </div>
+      <label class="rail-search">
+        <input id="rail-q" type="search" placeholder="搜索车次 / 起终点 / 走廊…" autocomplete="off" />
+      </label>
+      <div class="rail-filters" id="rail-filters" data-for="trains">
+        <button type="button" data-type="all" class="active">全部</button>
+        <button type="button" data-type="G">高铁 G</button>
+        <button type="button" data-type="D">动车 D</button>
+        <button type="button" data-type="C">城际 C</button>
+      </div>
+      <div class="rail-filters" id="highway-filters" data-for="highways" hidden>
+        <button type="button" data-kind="all" class="active">全部</button>
+        <button type="button" data-kind="放射">放射</button>
+        <button type="button" data-kind="纵线">纵线</button>
+        <button type="button" data-kind="横线">横线</button>
+      </div>
+      <ol class="rail-list" id="rail-list"></ol>
+    </aside>
+
+    <article class="rail-info" id="rail-info" hidden>
+      <header>
+        <h1 id="info-code"></h1>
+        <p id="info-od"></p>
+      </header>
+      <dl>
+        <div><dt id="info-label-corridor">走廊</dt><dd id="info-corridor"></dd></div>
+        <div><dt>里程</dt><dd id="info-km"></dd></div>
+        <div><dt id="info-label-stops">停站</dt><dd id="info-stops"></dd></div>
+        <div><dt id="info-label-progress">进度</dt><dd id="info-progress"></dd></div>
+      </dl>
+      <ol class="rail-stops" id="info-stop-list"></ol>
+    </article>
+
+    <footer class="rail-dock">
+      <div class="seg" id="rail-views">
+        <button type="button" data-view="orbit" class="active">俯瞰</button>
+        <button type="button" data-view="follow">跟随列车</button>
+        <button type="button" data-view="cab">驾驶舱</button>
+      </div>
+      <label class="slider">时速倍率 <input id="rail-speed" type="range" min="10" max="400" value="120" /><b id="rail-speed-val">×1.2</b></label>
+      <div class="toggles" id="rail-toggles">
+        <label><input type="checkbox" data-layer="hsr" checked />高铁</label>
+        <label><input type="checkbox" data-layer="conventional" checked />普速</label>
+        <label><input type="checkbox" data-layer="expressway" checked />高速公路</label>
+        <label><input type="checkbox" data-layer="corridor" checked />重点走廊</label>
+        <label><input type="checkbox" data-layer="stations" checked />枢纽站</label>
+        <label><input type="checkbox" data-layer="labels" checked />地名</label>
+        <label><input type="checkbox" data-layer="borders" checked />省界</label>
+      </div>
+    </footer>
+
+    <div class="rail-loader" id="rail-loader">
+      <p>正在装载中国铁路公开数据…</p>
+      <div class="bar"><i id="rail-loader-bar"></i></div>
+      <small id="rail-loader-pct">0%</small>
+    </div>
+
+    <p class="rail-credit" id="rail-credit"></p>
+  </div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

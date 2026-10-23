@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRIM1 · 环太平洋 机甲与怪兽</title>
+  <script type="module" crossorigin src="./assets/prim1-DQnQPC9n.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-D90_RIQy.js">
+  <link rel="modulepreload" crossorigin href="./assets/BufferGeometryUtils-Cj34ebIR.js">
+  <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-BMcLoZzq.js">
+  <link rel="modulepreload" crossorigin href="./assets/meshopt_decoder.module-j6OW_3Rk.js">
+  <link rel="modulepreload" crossorigin href="./assets/style-CzB-ka-o.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-CdVUlVUp.js">
+  <link rel="modulepreload" crossorigin href="./assets/OutputPass-DRaLd4T9.js">
+  <link rel="stylesheet" crossorigin href="./assets/style-D4f1rP6d.css">
+  <link rel="stylesheet" crossorigin href="./assets/prim1-LLVNC-ts.css">
+  <link rel="stylesheet" crossorigin href="./assets/style-CiMAzQUw.css">
+</head>
+<body class="tf2 pr" data-side="jaeger">
+  <div id="tf-gl"></div>
+
+  <header class="tf-top">
+    <a class="tf-brand" href="./" title="返回首页">
+      <span class="tf-code">PRIM1</span>
+      <span class="tf-title">环太平洋 · 机甲与怪兽<small>Pacific Rim · <span id="tf-count">11</span> 个角色 · 真实比例 · 暴雨夜香港港湾</small></span>
+    </a>
+    <div class="tf-keys"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> 单体 / 对决 / 阵容 <kbd>←→</kbd> 切换角色 <kbd>空格</kbd> 雷击</div>
+  </header>
+
+  <aside class="tf-side">
+    <ol class="tf-list" id="tf-list"></ol>
+    <div class="pr-hint" id="pr-hint"></div>
+  </aside>
+
+  <article class="tf-info" id="tf-info"></article>
+  <div class="pr-lineup-tip">按设定身高从矮到高排列 · 点击任一角色飞近查看 · 点视角按钮回到全景</div>
+
+  <div class="tf2-loading" id="tf-loading"></div>
+
+  <footer class="tf-dock">
+    <div class="tf-seg pr-modes" id="pr-modes"></div>
+    <button class="tf-roll" id="pr-strike"><b>⚡</b>雷击</button>
+    <div class="tf-seg" id="tf-views"></div>
+    <div class="tf-seg" id="tf-toggles">
+      <button data-toggle="spin">转台</button>
+      <button data-toggle="rain" class="active">暴雨</button>
+      <button data-toggle="sound" class="active">音效</button>
+    </div>
+  </footer>
+
+  <div class="tf-credit tf2-credit">
+    <div id="tf2-credits"></div>
+    <div>Pacific Rim 及角色名为传奇影业（Legendary）所有。模型来自 Sketchfab 社区作者，按 CC BY 授权署名使用，仅作非商业技术演示。</div>
+  </div>
+
+  <div id="tf-loader"><div class="tf-loader-text">取消末日 · 正在接入破碎穹顶…</div></div>
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

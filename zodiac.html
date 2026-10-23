@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>生肖幻境</title>  <script type="module" crossorigin src="./assets/zodiac-ZjOvu8IG.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-D90_RIQy.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-BjjKTafr.js">
+  <link rel="modulepreload" crossorigin href="./assets/Reflector-CMPJtKG2.js">
+  <link rel="stylesheet" crossorigin href="./assets/zodiac-BJjp5XoF.css">
+</head>
+<body><main class="zodiac-shell" data-page="guardians">
+<header>
+  <a href="./">☯ 生肖幻境</a>
+  <nav>
+    <button type="button" class="active" data-page="guardians">十二守护</button>
+    <button type="button" data-page="hall">珍品展厅</button>
+    <button type="button" data-page="craft">釉彩工艺</button>
+  </nav>
+  <div><i></i> CELESTIAL ARCHIVE <time></time></div>
+</header>
+
+<aside class="zodiac-left">
+  <section class="z-panel intro page-guardians page-hall">
+    <small id="intro-kicker">CHINESE ZODIAC / 12 GUARDIANS</small>
+    <h1 id="intro-title">十二生肖<br/>立体画卷</h1>
+    <p id="intro-copy">以正面、背面立绘塑形，侧面定厚度，烧制成釉彩描金的立体摆件。</p>
+    <div class="method"><span>2D × 3 VIEWS</span><b>✦</b><span>INFLATED 3D</span></div>
+  </section>
+  <section class="z-panel intro page-craft">
+    <small>GLAZE CRAFT / KILN NOTES</small>
+    <h1>釉彩描金<br/>成器工序</h1>
+    <p>三视图塑形后，经补水、上釉、描金与罩清漆，使前后封边融为完整釉口。</p>
+    <div class="method"><span>素坯</span><b>✦</b><span>成釉</span></div>
+  </section>
+  <section class="z-panel zodiac-list page-guardians page-hall">
+    <div class="section-head"><h2>守护灵名录</h2><span>12 ACTIVE</span></div>
+    <ol id="zodiac-list"></ol>
+  </section>
+  <section class="z-panel craft-steps page-craft">
+    <div class="section-head"><h2>烧造步骤</h2><span>06 STEPS</span></div>
+    <ol class="craft-ol">
+      <li><b>01</b><span>切取正 / 侧 / 背三视图</span></li>
+      <li><b>02</b><span>距离场推算圆形截面</span></li>
+      <li><b>03</b><span>前后鼓面与釉口封边</span></li>
+      <li><b>04</b><span>釉彩分区 · 描金高光</span></li>
+      <li><b>05</b><span>清漆罩面 · 环境反射</span></li>
+      <li><b>06</b><span>落座展台 · 光柱定焦</span></li>
+    </ol>
+  </section>
+</aside>
+
+<section class="zodiac-stage">
+  <canvas id="zodiac-canvas"></canvas>
+  <div class="stage-title"><small id="stage-kicker">ZODIAC MUSEUM / HALL 12</small><strong id="stage-title">十二生肖珍品馆</strong></div>
+  <div class="view-key" id="view-key"><i></i> 釉彩　<i></i> 描金　<i></i> 胡桃木</div>
+  <div class="craft-views page-craft" id="craft-views">
+    <figure><canvas id="craft-front"></canvas><figcaption>正面</figcaption></figure>
+    <figure><canvas id="craft-side"></canvas><figcaption>侧面</figcaption></figure>
+    <figure><canvas id="craft-back"></canvas><figcaption>背面</figcaption></figure>
+  </div>
+  <div class="interaction-tip" id="interaction-tip">点击展台查看珍品 · 拖拽环视展厅</div>
+</section>
+
+<aside class="zodiac-right">
+  <section class="z-panel selected">
+    <small id="selected-kicker">SELECTED GUARDIAN</small>
+    <div class="seal" id="selected-symbol">龙</div>
+    <h2 id="selected-name">龙</h2>
+    <p id="selected-pinyin">LONG · 东方苍龙</p>
+    <div class="trait" id="selected-trait">祥瑞 · 进取</div>
+    <div class="view-status" id="view-status">
+      <div><b>3</b><span>视图塑形</span></div>
+      <div><b>200²</b><span>高度网格</span></div>
+      <div><b>釉</b><span>清漆面层</span></div>
+    </div>
+  </section>
+  <section class="z-panel tutorial page-guardians">
+    <div class="section-head"><h2>合成方式</h2><span>LIVE</span></div>
+    <p><i>01</i> 正面轮廓计算距离场</p>
+    <p><i>02</i> 圆形截面鼓起前后两面</p>
+    <p><i>03</i> 侧面釉口封合整体厚度</p>
+  </section>
+  <section class="z-panel tutorial page-hall">
+    <div class="section-head"><h2>展厅导览</h2><span>RING</span></div>
+    <p><i>01</i> 十二展台环列中央柜</p>
+    <p><i>02</i> 点击铭牌或摆件切换珍品</p>
+    <p><i>03</i> 拖拽环视 · 滚轮拉近</p>
+  </section>
+  <section class="z-panel tutorial page-craft">
+    <div class="section-head"><h2>釉口要点</h2><span>SEAM</span></div>
+    <p><i>01</i> 轮廓最小厚度避免闪烁</p>
+    <p><i>02</i> 半圆截面衔接正背面</p>
+    <p><i>03</i> 侧面立绘铺色隐藏接缝</p>
+  </section>
+  <section class="z-panel constellation">
+    <div class="section-head"><h2>星图数据</h2><span>2026</span></div>
+    <div class="star-line"><b>生肖轮转</b><span>午马年</span></div>
+    <div class="star-line"><b>当前时辰</b><span id="shi-chen">戌时</span></div>
+    <div class="star-line"><b>守护激活</b><span>12 / 12</span></div>
+  </section>
+</aside>
+</main>  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body></html>
