@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>算力运维中心</title>  <script type="module" crossorigin src="./assets/servers-Gfbv7Jsw.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-cZ7pRlNf.js">
+  <link rel="modulepreload" crossorigin href="./assets/ops-BnVYAt0f.js">
+  <link rel="modulepreload" crossorigin href="./assets/RectAreaLightUniformsLib-B7N1PI99.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-CjEMJ_tC.js">
+  <link rel="modulepreload" crossorigin href="./assets/fit-BSHkNBCw.js">
+  <link rel="stylesheet" crossorigin href="./assets/ops-VxKC17mj.css">
+</head>
+<body><main class="ops-shell" data-page="fleet">
+  <header class="ops-header"><a class="ops-brand" href="./">◉ <span>NEBULA</span> 算力运维中心</a><nav>
+    <button type="button" class="active" data-page="fleet">资源总览</button>
+    <button type="button" data-page="topology">机房拓扑</button>
+    <button type="button" data-page="events">告警事件</button>
+  </nav><div class="ops-live"><i></i> 监控连接正常 <time></time></div></header>
+  <aside class="fleet-panel" id="fleet"><div class="eyebrow" id="fleet-eyebrow">FLEET OVERVIEW / CN-01</div><h1 id="fleet-title">资源编队态势</h1><div class="fleet-score"><span>健康指数</span><strong>92.6</strong><b>稳定</b></div><div class="fleet-grid"><div><strong id="fleet-total">--</strong><span>托管服务器</span></div><div><strong id="fleet-online">--</strong><span>运行正常</span></div><div><strong id="fleet-warning">--</strong><span>需要关注</span></div><div><strong id="fleet-critical">--</strong><span>严重告警</span></div></div><section class="power-card"><div><span>实时总功耗</span><strong>56.8 <em>kW</em></strong></div><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>峰值容量使用率 71.4% · PUE 1.29</small></section><section class="region-card"><div class="section-head"><h2>区域容量</h2><span>SYNC</span></div><div class="region"><b>华北 A 区</b><i><em style="width:69%"></em></i><span>69%</span></div><div class="region"><b>华东 B 区</b><i><em style="width:81%"></em></i><span>81%</span></div><div class="region"><b>华南 C 区</b><i><em style="width:54%"></em></i><span>54%</span></div></section></aside>
+  <section class="rack-stage" id="topology"><canvas id="rack-canvas"></canvas><canvas id="ops-alt" class="stage-alt"></canvas><div class="stage-title"><span id="stage-kicker">DATACENTER / DIGITAL TWIN</span><strong id="stage-heading">可视化机柜阵列</strong></div><div class="stage-legend" id="stage-legend"><i class="online"></i> 正常 <i class="warning"></i> 预警 <i class="critical"></i> 严重 <b id="stage-hint">拖拽观察 · 点击机柜查看详情</b></div>
+    <aside class="ops-board page-events" id="events-board">
+      <div class="section-head"><h2>告警队列</h2><span>OPEN</span></div>
+      <ul id="events-board-list"></ul>
+    </aside>
+  </section>
+  <aside class="machine-panel"><div class="eyebrow">SELECTED NODE / TELEMETRY</div><div class="machine-state"><i id="status-dot"></i><span id="machine-status">--</span><small id="machine-ip">--</small></div><h2 id="machine-name">--</h2><p id="machine-region">--</p><div class="meter-list"><div><span>CPU 负载</span><b id="cpu-val">--</b><i><em id="cpu-bar"></em></i></div><div><span>内存占用</span><b id="memory-val">--</b><i><em id="memory-bar"></em></i></div><div><span>磁盘使用</span><b id="disk-val">--</b><i><em id="disk-bar"></em></i></div><div><span>核心温度</span><b id="temp-val">--</b><i><em id="temp-bar"></em></i></div></div><a class="detail-button" id="machine-detail" href="server-detail.html">进入单机大屏 <span>↗</span></a><section class="activity" id="events"><div class="section-head"><h2>实时事件流</h2><span>LAST 30M</span></div><p><i></i><time>10:58:24</time> 华东 B 区完成主备切换校验</p><p><i></i><time>10:52:17</time> 例行容器镜像扫描已完成</p><p class="warn"><i></i><time>10:44:08</time> 上海边缘节点 03 温度升高</p><p class="danger"><i></i><time>10:41:36</time> 杭州 AI 推理节点负载过高</p></section></aside>
+</main>  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body></html>

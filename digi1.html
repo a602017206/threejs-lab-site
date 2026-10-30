@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIGI1 · 数码宝贝图鉴</title>
+    <link rel="icon" href="data:," />
+    <script type="module" crossorigin src="./assets/digi1-DkXFii-y.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/three.module-cZ7pRlNf.js">
+    <link rel="modulepreload" crossorigin href="./assets/OrbitControls-OVmvgHMM.js">
+    <link rel="modulepreload" crossorigin href="./assets/BufferGeometryUtils-Bd8VpSrF.js">
+    <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-CDwYrzsM.js">
+    <link rel="modulepreload" crossorigin href="./assets/DRACOLoader-J3pUZY-E.js">
+    <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-CjEMJ_tC.js">
+    <link rel="modulepreload" crossorigin href="./assets/gamePreview-rU5Hl81t.js">
+    <link rel="stylesheet" crossorigin href="./assets/gamePreview-CX3qShRl.css">
+    <link rel="stylesheet" crossorigin href="./assets/digi1-BvoGbwry.css">
+  </head>
+  <body class="dx dx-digi">
+    <div style="position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; padding: .35rem 1rem; text-align: center; background: #382c29; color: #fff; font-size: .8rem">非官方图鉴 · 模型及立绘未经授权，仅供参考；来源及权利人见图鉴详情</div>
+    <header class="dx-top">
+      <a class="dx-brand" href="./">
+        <strong>DIGI1</strong>
+        <small>数码宝贝图鉴 · 大冒险 <span data-dx-count>0</span></small>
+      </a>
+      <div class="dx-top-actions">
+        <label><input type="checkbox" data-dx-only3d /> 仅有 3D</label>
+        <button type="button" data-dx-spin aria-pressed="true">转台</button>
+        <button type="button" data-dx-reset>重置镜头</button>
+      </div>
+    </header>
+
+    <div class="dx-layout">
+      <aside class="dx-side">
+        <input class="dx-search" data-dx-search type="search" placeholder="搜索名称 / 搭档…" />
+        <div class="dx-filters" data-dx-filters></div>
+        <div class="dx-list" data-dx-list></div>
+      </aside>
+
+      <main class="dx-stage-wrap">
+        <div class="dx-stage" data-dx-stage></div>
+        <div class="dx-hud">
+          <div class="dx-status" data-dx-status>准备展台…</div>
+        </div>
+      </main>
+
+      <article class="dx-detail" data-dx-detail></article>
+    </div>
+
+    <div class="dx-mobile">
+      <button type="button" data-dx-drawer>列表</button>
+    </div>
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

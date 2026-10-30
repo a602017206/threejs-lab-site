@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0" /><title>单机运行详情</title>  <script type="module" crossorigin src="./assets/serverDetail-CchBh3vM.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-cZ7pRlNf.js">
+  <link rel="modulepreload" crossorigin href="./assets/ops-BnVYAt0f.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-CjEMJ_tC.js">
+  <link rel="stylesheet" crossorigin href="./assets/ops-VxKC17mj.css">
+  <link rel="stylesheet" crossorigin href="./assets/serverDetail-DQ1OSjt6.css">
+</head>
+  <body>
+    <main class="detail-shell">
+      <header class="detail-header"><a href="servers.html">← 返回资源总览</a><div><span>NODE INSPECTION</span><strong id="detail-name">加载中</strong></div><time></time></header>
+      <aside class="detail-left">
+        <div class="detail-label">LIVE PERFORMANCE</div><h1>运行状态</h1>
+        <div class="detail-status"><i id="detail-dot"></i><b id="detail-status">--</b><span id="detail-uptime">--</span></div>
+        <div class="radial-set"><div class="radial cpu"><b id="detail-cpu">--</b><span>CPU</span></div><div class="radial memory"><b id="detail-memory">--</b><span>MEMORY</span></div></div>
+        <div class="detail-bars"><div><span>磁盘阵列</span><b id="detail-disk">--</b><i><em id="detail-disk-bar"></em></i></div><div><span>核心温度</span><b id="detail-temp">--</b><i><em id="detail-temp-bar"></em></i></div><div><span>网络吞吐</span><b id="detail-traffic">--</b><i><em style="width:74%"></em></i></div></div>
+        <section class="processes"><div class="detail-label">核心进程</div><p><b>推理服务 <small>inference-engine</small></b><span>34.2%</span></p><p><b>容器运行时 <small>containerd</small></b><span>18.7%</span></p><p><b>向量索引服务 <small>vector-indexer</small></b><span>12.4%</span></p><p><b>网关服务 <small>nginx-gateway</small></b><span>7.8%</span></p></section>
+      </aside>
+      <section class="machine-core"><canvas id="core-canvas"></canvas><div class="core-heading"><span>DIGITAL TWIN / 2U CHASSIS</span><strong>整机结构 · 开盖视图</strong></div><div class="core-caption"><i></i> <span id="core-caption">数据总线正常 · 48 个逻辑核心在线</span></div></section>
+      <aside class="detail-right"><div class="detail-label">HARDWARE & SERVICE</div><h2>机器画像</h2><div class="info-list"><p><span>节点地址</span><b id="detail-ip">--</b></p><p><span>托管服务</span><b id="detail-services">--</b></p><p><span>实时功耗</span><b id="detail-power">--</b></p><p><span>上次维护</span><b>2026-07-28</b></p></div><section class="thermal"><div class="detail-label">THERMAL HISTORY</div><div class="thermal-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div><span>09:00</span><span>12:00</span><span>15:00</span></div></section><section class="logs"><div class="detail-label">SYSTEM LOG</div><p><time>11:05:12</time> 监控采样写入成功</p><p><time>11:03:44</time> 工作负载调度完成</p><p><time>11:01:09</time> 网络连接校验通过</p></section></aside>
+    </main>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

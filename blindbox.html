@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101b31" />
+  <meta name="description" content="LABUBU 与朋友们的赛博盲盒：真实三维模型、拆盒动画与本地收藏。" />
+  <title>赛博盲盒 · UNBOX THE UNKNOWN</title>
+  <script type="module" crossorigin src="./assets/blindbox-BIKUwy1V.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-cZ7pRlNf.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-OVmvgHMM.js">
+  <link rel="modulepreload" crossorigin href="./assets/BufferGeometryUtils-Bd8VpSrF.js">
+  <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-CDwYrzsM.js">
+  <link rel="modulepreload" crossorigin href="./assets/meshopt_decoder.module-j6OW_3Rk.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-CjEMJ_tC.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoundedBoxGeometry-_4VqZlKT.js">
+  <link rel="stylesheet" crossorigin href="./assets/blindbox-BNRX1I1W.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a href="./index.html" class="brand" aria-label="返回实验室首页"><svg width="29" height="31" viewBox="0 0 29 31" fill="none" aria-hidden="true"><path d="M14.5 2 27 9v14l-12.5 7L2 23V9l12.5-7Z M2 9l12.5 7L27 9M14.5 16v14M8 5.5 21 12" stroke="currentColor" stroke-width="1.5"/></svg><span>UNBOX<span class="brand-sub">CYBER TOY CLUB</span></span></a>
+      <span class="top-caption">THE JOY IS IN THE UNKNOWN.</span>
+      <nav><button id="pool-button" class="text-button">本期角色 <span class="pool-count">8</span></button><button id="collection-button" class="collection-button">我的收藏 <span id="owned-count">0 / 8</span></button></nav>
+    </header>
+
+    <main class="experience">
+      <div class="ambient" aria-hidden="true"></div>
+      <section class="intro">
+        <p class="eyebrow"><span class="live-dot"></span> LABUBU & FRIENDS</p>
+        <h1>一点未知。<br>一盒<span>惊喜。</span></h1>
+        <p class="intro-copy">把期待留到打开的那一刻。<br>属于你的下一位小怪兽，正在盒子里。</p>
+        <div class="series-label"><span>本期混合池</span><strong>THE LITTLE<br>UNEXPECTED</strong><small>6 LABUBU + 2 FRIENDS</small></div>
+        <div class="progress-label"><span>你的收藏进度</span><strong id="progress-count">00 <i>/ 8</i></strong></div>
+        <div class="progress-track"><span id="progress-fill"></span></div>
+      </section>
+
+      <div id="viewport" class="viewport"></div>
+      <div class="orbit-caption"><span class="orbit-cross">✦</span> 拖动旋转 · 滚轮 / 双指缩放</div>
+      <p id="mobile-result" class="mobile-result" hidden></p>
+
+      <aside class="side-note">
+        <div class="edition-label"><span>CYBER BLIND BOX</span><strong>VOL. 01</strong><span class="edition-line"></span></div>
+        <article id="toy-info" class="toy-info">
+          <p class="eyebrow" id="result-kicker">MEET YOUR NEXT FAVORITE</p>
+          <div class="teaser"><img id="teaser-image" src="./blindbox/thumbs/labubu-classic.jpg" alt="LABUBU 经典模型预览" /><span class="teaser-dot">?</span></div>
+          <h2 id="result-name">今天，会遇见谁？</h2>
+          <p id="result-description">长耳朵，尖牙齿，和一点点调皮。<br>LABUBU 与朋友们等你拆盒。</p>
+          <a id="model-credit" target="_blank" rel="noopener noreferrer" hidden>查看模型与作者 ↗</a>
+        </article>
+      </aside>
+
+      <div class="stage-tools" aria-label="展示控制"><button id="spin-button" title="自动旋转" aria-pressed="true">↻ <span>旋转</span></button><button id="reset-camera" title="重置视角">⌖ <span>复位</span></button><button id="sound-button" aria-pressed="false" title="开盒音效">♪ <span>声音关</span></button></div>
+
+      <section class="draw-controls" aria-label="选择与拆开盲盒">
+        <div id="box-picker" class="box-picker" role="group" aria-label="选择盒子"></div>
+        <p id="stage-status" class="stage-status" role="status" aria-live="polite">挑一个顺眼的盒子，好运从这里开始。</p>
+        <div class="action-row"><button id="draw-button" class="draw-button"><span id="draw-label">拆开这一盒</span><span aria-hidden="true">↗</span></button><span class="free-label">免费体验<br><small>不涉及实物或交易</small></span></div>
+      </section>
+      <div class="scene-index" aria-hidden="true">01 <span>—</span> UNBOXING ROOM</div>
+    </main>
+
+    <footer class="footer"><span><span class="live-dot"></span> 赛博盲盒 · 三维互动实验</span><span>社区模型展陈 · 非官方产品</span><button id="rules-button">抽取规则与来源 ↗</button></footer>
+  </div>
+
+  <dialog id="catalog-dialog" class="catalog-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><div><p class="eyebrow" id="dialog-kicker">YOUR LITTLE UNIVERSE</p><h2 id="dialog-title">我的收藏</h2></div><button id="close-dialog" class="close-dialog" aria-label="关闭">×</button></div>
+    <p class="dialog-copy" id="dialog-copy"></p>
+    <div id="catalog-grid" class="catalog-grid"></div>
+    <p class="pool-note">演示混合池：LABUBU 合计 80%，其他 2 款各 10%。每次独立随机，可抽到重复款。展陈名与权重为本项目设定，不代表官方系列或概率。仅保存于当前浏览器。</p>
+    <div class="source-note">模型由 Sketchfab 社区作者制作，采用 CC Attribution 授权，保留原有贴图与顶点色。每张卡片可查看作者、源模型与许可；泡泡玛特及角色品牌归各自权利人所有。</div>
+  </dialog>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>

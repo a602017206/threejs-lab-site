@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DYNASTY1 · 河图五千年</title>
+  <script type="module" crossorigin src="./assets/dynasty1-CMchEmJa.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three.module-cZ7pRlNf.js">
+  <link rel="modulepreload" crossorigin href="./assets/OrbitControls-OVmvgHMM.js">
+  <link rel="stylesheet" crossorigin href="./assets/dynasty1-yhPO3LCU.css">
+</head>
+<body>
+  <div id="gl"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="./">
+      <span class="code">DYNASTY1</span>
+      <span class="title">河图五千年<small>CHRONICLE · MAP · RELATIONS</small></span>
+    </a>
+    <nav class="modes" aria-label="视图切换">
+      <button type="button" data-mode="timeline" class="active">中国地图</button>
+      <button type="button" data-mode="map">势力对比</button>
+      <button type="button" data-mode="graph">人物关系</button>
+    </nav>
+  </header>
+
+  <aside class="side">
+    <header>
+      <small>CHINA MAP · DYNASTIES</small>
+      <h1>历代纪年</h1>
+    </header>
+    <ol class="era-list" id="era-list"></ol>
+  </aside>
+
+  <article class="panel">
+    <header>
+      <small id="panel-kicker">TANG</small>
+      <h2 id="panel-title">唐</h2>
+    </header>
+    <div class="panel-body">
+      <div class="seal-row">
+        <div class="seal" id="seal">唐</div>
+        <div class="meta">
+          <h3 id="panel-title-dup" style="display:none"></h3>
+          <p id="meta-line"></p>
+        </div>
+      </div>
+      <p class="blurb" id="blurb"></p>
+
+      <section class="block">
+        <h4>历史人物</h4>
+        <div class="people" id="people"></div>
+        <div id="person-detail" class="block" style="display:none;margin-top:.8rem"></div>
+      </section>
+
+      <section class="block">
+        <h4>代表事件</h4>
+        <ul class="events" id="events"></ul>
+      </section>
+
+      <section class="block">
+        <h4>代表作品 / 遗存</h4>
+        <ul class="works" id="works"></ul>
+      </section>
+
+      <section class="block" id="rels-block">
+        <h4>人物关系</h4>
+        <ul class="rels" id="rels"></ul>
+      </section>
+    </div>
+  </article>
+
+  <div class="hint" id="hint">当代中国底图 · 左侧点选朝代，仅显示该朝势力范围</div>
+  <div class="loader" id="loader">正在载入中国地图…</div>
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>
