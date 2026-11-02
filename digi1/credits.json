@@ -1,0 +1,441 @@
+{
+  "botamon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Botamon",
+    "model": {
+      "author": "Mega_Jimjims",
+      "title": "Botamon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://sketchfab.com/3d-models/botamon-8c960d46fc134612ab4b286788de9d45"
+    }
+  },
+  "koromon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Koromon"
+  },
+  "agumon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Agumon",
+    "model": {
+      "author": "aaandro",
+      "title": "Agumon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://sketchfab.com/3d-models/00bafb51a08946ffbc35d49fd1946f17"
+    }
+  },
+  "greymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Greymon.png"
+  },
+  "metalgreymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Metal_Greymon.png"
+  },
+  "wargreymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/War_Greymon.png"
+  },
+  "punimon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Punimon"
+  },
+  "tsunomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Tunomon.png"
+  },
+  "gabumon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Gabumon.png"
+  },
+  "garurumon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Garurumon"
+  },
+  "weregarurumon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Were_Garurumon.png"
+  },
+  "metalgarurumon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Metal_Garurumon.png"
+  },
+  "yokomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Pyocomon.png"
+  },
+  "piyomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Piyomon.png"
+  },
+  "birdramon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Birdramon"
+  },
+  "garudamon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Garudamon"
+  },
+  "motimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Mochimon.png"
+  },
+  "tentomon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Tentomon"
+  },
+  "kabuterimon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Kabuterimon"
+  },
+  "megakabuterimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Atlur_Kabuterimon_(Red).png"
+  },
+  "tanemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Tanemon.png"
+  },
+  "palmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Palmon.png"
+  },
+  "togemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Togemon.png"
+  },
+  "lillymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Lilimon.png"
+  },
+  "bukamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Pukamon.png"
+  },
+  "gomamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Gomamon.png"
+  },
+  "ikkakumon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Ikkakumon"
+  },
+  "zudomon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Zudomon"
+  },
+  "tokomon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Tokomon"
+  },
+  "patamon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Patamon"
+  },
+  "angemon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Angemon"
+  },
+  "magnaangemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Holy_Angemon.png"
+  },
+  "nyaromon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Nyaromon"
+  },
+  "salamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Plotmon.png"
+  },
+  "gatomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Tailmon.png"
+  },
+  "angewomon": {
+    "author/source": "digi-api.com image feed (Digimon Reference Book lineage)",
+    "license note": "Fan-use archive image via digi-api; Digimon IP belongs to Bandai/Toei. See SOURCES.md.",
+    "url": "https://digi-api.com/api/v1/digimon/Angewomon"
+  },
+  "devimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Devimon.png"
+  },
+  "etemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Etemon.png"
+  },
+  "myotismon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Vamdemon.png"
+  },
+  "metalseadramon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Metal_Seadramon.png"
+  },
+  "apocalymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Apocalymon.png"
+  },
+  "veemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/V-mon.png"
+  },
+  "wormmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Wormmon.png"
+  },
+  "hawkmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Hawkmon.png"
+  },
+  "armadillomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Armadimon.png"
+  },
+  "puppetmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Pinochimon.png"
+  },
+  "machinedramon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Mugendramon.png"
+  },
+  "piedmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Piemon.png"
+  },
+  "exveemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/XV-mon.png"
+  },
+  "flamedramon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Fladramon.png"
+  },
+  "shakkoumon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Shakkoumon.png"
+  },
+  "silphymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Silphymon.png"
+  },
+  "stingmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Stingmon.png"
+  },
+  "ankylomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Ankylomon.png"
+  },
+  "magnamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Magnamon.png"
+  },
+  "paildramon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Paildramon.png"
+  },
+  "aquilamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Aquilamon.png"
+  },
+  "keramon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Keramon.png"
+  },
+  "digmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Digmon.png"
+  },
+  "halsemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Holsmon.png"
+  },
+  "diaboromon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Diablomon.png"
+  },
+  "blackwargreymon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Black_War_Greymon.png"
+  },
+  "seraphimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Seraphimon.png"
+  },
+  "omnimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Omegamon.png"
+  },
+  "ophanimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Ofanimon.png"
+  },
+  "armageddemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Armagemon.png"
+  },
+  "nyokimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Nyokimon.png"
+  },
+  "growlmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Growmon.png"
+  },
+  "guilmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Guilmon.png"
+  },
+  "gallantmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Dukemon.png"
+  },
+  "wargrowlmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Megalo_Growmon.png"
+  },
+  "renamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Renamon.png"
+  },
+  "taomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Taomon.png"
+  },
+  "sakuyamon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Sakuyamon.png"
+  },
+  "gargomon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Galgomon.png"
+  },
+  "impmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Impmon.png"
+  },
+  "terriermon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Terriermon.png"
+  },
+  "phoenixmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Hououmon.png"
+  },
+  "magnadramon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Holydramon.png"
+  },
+  "rosemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Rosemon.png"
+  },
+  "herculeskabuterimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Herakle_Kabuterimon.png"
+  },
+  "beelzemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Beelzebumon.png"
+  },
+  "vikemon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Vikemon.png"
+  },
+  "rapidmon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Rapidmon_Perfect.png"
+  },
+  "kyubimon": {
+    "author/source": "digi-api.com / Digimon Reference Book",
+    "license note": "立绘未经授权，仅供参考。",
+    "url": "https://digi-api.com/images/digimon/w/Kyubimon.png"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "note": "人像优先来自 Wikimedia Commons 公有领域作品；拉取失败的条目保留本地印章笺。",
+  "portraits": [
+    {
+      "file": "banzhao.jpg",
+      "bytes": 32114
+    },
+    {
+      "file": "caocao.jpg",
+      "bytes": 13823
+    },
+    {
+      "file": "caoxueqin.jpg",
+      "bytes": 13713
+    },
+    {
+      "file": "confucius.jpg",
+      "bytes": 55464
+    },
+    {
+      "file": "dufu.jpg",
+      "bytes": 70908
+    },
+    {
+      "file": "guanyu.jpg",
+      "bytes": 57698
+    },
+    {
+      "file": "hongwu.jpg",
+      "bytes": 34202
+    },
+    {
+      "file": "huangdi.jpg",
+      "bytes": 13780
+    },
+    {
+      "file": "kangxi.jpg",
+      "bytes": 30591
+    },
+    {
+      "file": "kubilai.jpg",
+      "bytes": 24369
+    },
+    {
+      "file": "laozi.jpg",
+      "bytes": 29150
+    },
+    {
+      "file": "libai.jpg",
+      "bytes": 26923
+    },
+    {
+      "file": "linzexu.jpg",
+      "bytes": 33998
+    },
+    {
+      "file": "liubang.jpg",
+      "bytes": 37500
+    },
+    {
+      "file": "liubei.jpg",
+      "bytes": 43116
+    },
+    {
+      "file": "qianlong.jpg",
+      "bytes": 29466
+    },
+    {
+      "file": "qinshihuang.jpg",
+      "bytes": 41044
+    },
+    {
+      "file": "quyuan.jpg",
+      "bytes": 13750
+    },
+    {
+      "file": "simaqian.jpg",
+      "bytes": 9931
+    },
+    {
+      "file": "songtaizu.jpg",
+      "bytes": 13561
+    },
+    {
+      "file": "sunyatsen.jpg",
+      "bytes": 33938
+    },
+    {
+      "file": "sunzi.jpg",
+      "bytes": 12768
+    },
+    {
+      "file": "sushi.jpg",
+      "bytes": 42579
+    },
+    {
+      "file": "tangtaizong.jpg",
+      "bytes": 34828
+    },
+    {
+      "file": "wangxizhi.jpg",
+      "bytes": 25695
+    },
+    {
+      "file": "wudi.jpg",
+      "bytes": 13309
+    },
+    {
+      "file": "wuzetian.jpg",
+      "bytes": 13634
+    },
+    {
+      "file": "xuanzang.jpg",
+      "bytes": 42633
+    },
+    {
+      "file": "yuefei.jpg",
+      "bytes": 53586
+    },
+    {
+      "file": "zhenghe.jpg",
+      "bytes": 25762
+    },
+    {
+      "file": "zhugeliang.jpg",
+      "bytes": 43586
+    },
+    {
+      "file": "zhuxi.jpg",
+      "bytes": 13202
+    }
+  ],
+  "map": {
+    "file": "china.json",
+    "note": "当代中国国界示意（简化），源自 DataV / gcoord 公开省界数据转 WGS-84，再简化用于 Three.js 挤出。历史朝代范围为示意叠层。"
+  }
+}

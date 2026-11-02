@@ -1,0 +1,11 @@
+{
+  "bennu.glb": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/3D%20Models/1999%20RQ36%20asteroid/1999%20RQ36%20asteroid.glb",
+  "voyager.glb": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/3D%20Models/Voyager%20Probe%20%28B%29/Voyager%20Probe%20%28B%29.glb",
+  "andromeda.jpg": "https://upload.wikimedia.org/wikipedia/commons/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg",
+  "whirlpool.jpg": "https://cdn.esahubble.org/archives/images/screen/heic0506a.jpg",
+  "sombrero.jpg": "https://cdn.esahubble.org/archives/images/screen/opo0328a.jpg",
+  "triangulum.jpg": "https://cdn.esahubble.org/archives/images/screen/heic1901a.jpg",
+  "orion.jpg": "https://cdn.esahubble.org/archives/images/screen/heic0601a.jpg",
+  "milkyway.jpg": "https://cdn.eso.org/images/screen/eso1339e.jpg",
+  "whirlpool-nasa.glb": "https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Printing/Whirlpool%20Galaxy"
+}

@@ -1,0 +1,57 @@
+{
+  "generatedFor": "rail1",
+  "projection": {
+    "originLon": 105.0,
+    "originLat": 35.0,
+    "scale": 0.12
+  },
+  "counts": {
+    "provinces": 35,
+    "hsrSegments": 12306,
+    "conventionalSegments": 4640,
+    "stations": 610,
+    "trains": 225,
+    "namedCorridors": 80,
+    "corridorSegments": 2361,
+    "expresswaySegments": 4546
+  },
+  "sources": [
+    {
+      "name": "China province borders (incl. Taiwan / HK / Macao / South China Sea)",
+      "url": "https://github.com/panyanbin/gcoord (Aliyun DataV atlas dump)",
+      "license": "DataV public atlas data; coordinates converted GCJ-02→WGS-84"
+    },
+    {
+      "name": "China HSR rails & stations (OSM)",
+      "url": "https://github.com/linroger/china-hsr-simulation",
+      "license": "ODbL (OpenStreetMap)"
+    },
+    {
+      "name": "Followable G/D/C trains with rail-graph geometry",
+      "url": "https://github.com/linroger/china-hsr-simulation (oceanbase-simulation-data.json from 12306-derived tables)",
+      "license": "Project data; geometry traced on OSM rail graph",
+      "generatedAt": "2026-06-11T15:37:59+00:00"
+    },
+    {
+      "name": "Conventional railroads",
+      "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/railroads/",
+      "license": "Public Domain (Natural Earth)"
+    },
+    {
+      "name": "Beijing–Hohhot / Baotou corridors (rail-graph pathfind)",
+      "url": "OSM HSR + Natural Earth railroads + public station coords",
+      "license": "ODbL / Public Domain; path = shortest path on published rail vectors"
+    },
+    {
+      "name": "Train GLB models (Sketchfab CC-BY)",
+      "url": "see public/rail1/models/credits.json",
+      "license": "CC Attribution — authors listed in credits.json"
+    },
+    {
+      "name": "China expressways (Natural Earth 10m roads, expressway=1)",
+      "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/roads/",
+      "license": "Public Domain (Natural Earth); motorway-class roads clipped to China",
+      "note": "OSM Overpass motorway extract timed out; NE expressway flag used as equivalent layer"
+    }
+  ]
+}

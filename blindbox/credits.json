@@ -1,0 +1,98 @@
+{
+  "labubu-classic": {
+    "uid": "2e5ba678496745f7ac466267d4a36548",
+    "title": "Labubu: Classic - Collectible 3D Figure",
+    "author": "LaffiTOO",
+    "url": "https://sketchfab.com/3d-models/labubu-classic-collectible-3d-figure-2e5ba678496745f7ac466267d4a36548",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 3,
+    "vertices": 338868,
+    "bytes": 7140256
+  },
+  "labubu-farmer": {
+    "uid": "537b401339914455a1b1ed4d168f8dae",
+    "title": "Labubu - Farmer",
+    "author": "Brian Trepanier",
+    "url": "https://sketchfab.com/3d-models/labubu-farmer-537b401339914455a1b1ed4d168f8dae",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 1,
+    "vertices": 175153,
+    "bytes": 2669360
+  },
+  "labubu-jacket": {
+    "uid": "f2003ec23dbe444ca36fd42fe55cbde9",
+    "title": "LABUBU figurine in a jacket",
+    "author": "LaffiTOO",
+    "url": "https://sketchfab.com/3d-models/labubu-figurine-in-a-jacket-f2003ec23dbe444ca36fd42fe55cbde9",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 3,
+    "vertices": 346188,
+    "bytes": 7379188
+  },
+  "labubu-soft": {
+    "uid": "fbe43a040f8b4c589c14509b23d40c78",
+    "title": "LABUBU",
+    "author": "Sledgely",
+    "url": "https://sketchfab.com/3d-models/labubu-fbe43a040f8b4c589c14509b23d40c78",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 4,
+    "vertices": 77145,
+    "bytes": 1320460
+  },
+  "labubu-original": {
+    "uid": "e87c7f96304f4d8e8473e267a31a1f32",
+    "title": "Labubu",
+    "author": "nthmn.exe",
+    "url": "https://sketchfab.com/3d-models/labubu-e87c7f96304f4d8e8473e267a31a1f32",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 3,
+    "vertices": 309257,
+    "bytes": 6373544
+  },
+  "labubu-arloopa": {
+    "uid": "41754ad728a44aa08747ebe596199e66",
+    "title": "Arloopa Labubu",
+    "author": "arloopa",
+    "url": "https://sketchfab.com/3d-models/arloopa-labubu-41754ad728a44aa08747ebe596199e66",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 13,
+    "vertices": 150110,
+    "bytes": 4259884
+  },
+  "hirono": {
+    "uid": "2644e441c0a643ebbdd7c127d459381f",
+    "title": "HIRONO CUTE",
+    "author": "milkydariana",
+    "url": "https://sketchfab.com/3d-models/hirono-cute-2644e441c0a643ebbdd7c127d459381f",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 1,
+    "vertices": 8030,
+    "bytes": 268336
+  },
+  "skullpanda-warmth": {
+    "uid": "83a8e01a60ec42a3b2bb05a72e5f0d2f",
+    "title": "Skull Panda Warmth Series Taste From the Memory",
+    "author": "minnieie",
+    "url": "https://sketchfab.com/3d-models/skull-panda-warmth-series-taste-from-the-memory-83a8e01a60ec42a3b2bb05a72e5f0d2f",
+    "license": "CC Attribution",
+    "licenseUrl": "http://creativecommons.org/licenses/by/4.0/",
+    "communityModel": true,
+    "textures": 3,
+    "vertices": 51929,
+    "bytes": 1373824
+  }
+}
